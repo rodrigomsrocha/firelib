@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f2f2f2;
+}
+
+.App {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+label,
+strong,
+label span {
+  display: block;
+  margin: 6px 0;
+  width: 320px;
+}
+input {
+  padding: 1rem 0.5rem;
+  margin-bottom: 12px;
+  border: 2px solid #772eff;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  outline: none;
+  width: 100%;
+  &:hover,
+  &:focus {
+    border: 2px solid darken($color: #772eff, $amount: 20%);
+  }
+}
+button {
+  width: 320px;
+  background: #772eff;
+  font-size: 1.125rem;
+  color: #fff;
+  border: 0;
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: darken($color: #772eff, $amount: 10%);
+  }
+}
